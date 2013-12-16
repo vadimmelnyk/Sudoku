@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Game rules & HowTo</title>
+</head>
+<body>
+    <!-- BEGINSETTINGFLYOUT -->
+    <div data-win-control="WinJS.UI.SettingsFlyout" aria-label="Help settings flyout" data-win-options="{settingsCommandId:'help',width:'narrow'}">
+        <div class="win-ui-light win-header">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">Game rules</div>
+        </div>
+
+        <div class="win-content">
+            <div class="win-settings-section">
+                <h6 align="center"><b>Game rules</b></h6><br />
+                <p>
+                    &nbsp;&nbsp;&nbsp;Puzzle consists of a 9x9 grid containing given clues in various places.
+                    The object is to fill all empty squares so that the numbers 1 to 9 appear exactly once
+                    in each row, column and 3x3 box.
+                </p>
+                <br/>
+                
+
+                <h6 align="center"><b>You have two options for inserting a value:</b></h6>
+                <ul style="margin-left: 10px;">
+                    <li>
+                        Use hardware keyboard to insert a value to a cell.
+                        1-9 to fill a space, 0/delete/space to clear.
+                    </li>
+                    <li>
+                        Touch a cell you want to insert a value, and then use application's online keyboard.
+                    </li>
+                </ul>
+                <br/>
+                <ul>
+                    <br/><br/>
+                    <h6 align="center"><b>Additional game options</b></h6>
+                    <li>Use <b>New Board</b> to start game over</li>
+                    <li>Use <b>Rest board</b> to remove all inserted values from the board</li>
+                    <li>
+                        Use <b>Solve board</b> to solve the current Sudolu puzzle<br/>
+                        <p style="font-size: 9px;">If you have inserted wrong values, board wouldn't be solved, and you will get a notification about it.</p>
+                    </li>
+                    <li>Use <b>Clear board</b> to remove ALL values from the board</li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </div>
+    <!-- ENDSETTINGSFLYOUT -->
+</body>
+</html>

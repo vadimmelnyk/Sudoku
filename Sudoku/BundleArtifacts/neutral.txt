@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Vadim Melnyk\Documents\Visual Studio 2013\Projects\Sudoku\Sudoku\bin\Release\Sudoku_1.1.0.0_Bundle\Sudoku_1.1.0.0_AnyCPU.appx
+ResourcePack=C:\Users\Vadim Melnyk\Documents\Visual Studio 2013\Projects\Sudoku\Sudoku\bin\Release\Sudoku_1.1.0.0_Bundle\Sudoku_1.1.0.0_scale-180.appx

@@ -1,0 +1,31 @@
+﻿
+#keyboard {
+    background-color:#fff;
+    z-index:10;
+    /*width:280px;
+    height:145px;*/
+    position: absolute;
+    border: none;
+    text-align:center;
+}
+
+.key_button {
+    z-index:10;
+    background-color: #000;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    text-align:center;
+    font-size: 30px;
+}
+
+.key_button_clear {
+    z-index:10;
+ background-color: #000;
+    color: #ffffff;
+    width:310px;
+    height:100px;
+    padding:10px;
+    text-align:center;
+    font-size: 30px;
+}

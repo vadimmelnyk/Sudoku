@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sudoku</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Sudoku references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+    <!--Game Reference-->
+
+    <script src="Scripts/jquery-2.0.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#Container').fadeIn(1000);
+        });
+    </script>
+    <script src="js/sudoku.js"></script>
+    <link href="css/sudoku.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    
+</head>
+    <body>
+        
+        <div id="keyboard" style="display:none;">
+            <button id="1" class="key_button" onclick="insert_value(1)">1</button>
+            <button id="2" class="key_button" onclick="insert_value(2)">2</button>
+            <button id="3" class="key_button" onclick="insert_value(3)">3</button>
+            <br />
+            <button id="4" class="key_button" onclick="insert_value(4)">4</button>
+            <button id="5" class="key_button" onclick="insert_value(5)">5</button>
+            <button id="6" class="key_button" onclick="insert_value(6)">6</button>
+            <br />
+            <button id="7" class="key_button" onclick="insert_value(7)">7</button>
+            <button id="8" class="key_button" onclick="insert_value(8)">8</button>
+            <button id="9" class="key_button" onclick="insert_value(9)">9</button>
+            <br />
+            <button id="0" class="key_button_clear" onclick="insert_value(0)">Clear</button>
+        </div>
+        <div id="Container" style="display:none;">
+        </div>
+
+       
+               
+          
+     
+
+    
+        <div id="mainAppBar" data-win-control="WinJS.UI.AppBar">
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                    data-win-options="{label:'New game',icon:'save', section:'global',tooltip:'Play game again'}" id="newGame"></button>
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                    data-win-options="{label:'Reset board',icon:'redo',  section:'global',tooltip:'Reset board to default values'}" id="resetGame"></button>
+            
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                    data-win-options="{label:'Solve board',icon:'important',  section:'global',tooltip:'Solve board and fill all missing values'}" id="solveGame"></button>
+            
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                    data-win-options="{label:'Clear board',icon:'delete',  section:'global',tooltip:'Remove all numbers from the board'}" id="clearGame"></button>
+        </div> 
+        <script>
+            document.getElementById("newGame").addEventListener("click", NewGame, false);
+            document.getElementById("resetGame").addEventListener("click", ResetGame, false);
+            document.getElementById("solveGame").addEventListener("click", SolveGame, false);
+            document.getElementById("clearGame").addEventListener("click", ClearGame, false);
+
+
+            function NewGame() {
+                return makeBoard();
+            }
+
+            function ResetGame() {
+                return resetBoard();
+            }
+            
+            function SolveGame() {
+               
+                solveBoard();
+            }
+            
+            function ClearGame() {
+                return clearBoard();
+            }
+
+
+        </script>
+
+        
+        
+   
+    </body>
+</html>
